@@ -10,7 +10,9 @@
   "author": "Shuanglei Tao <tsl0922@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "gulp"
+    "build": "gulp",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "dependencies": {
     "babel-core": "^6.26.0",
@@ -23,6 +25,8 @@
     "gulp": "^3.9.1",
     "gulp-inline-source": "^3.0.0",
     "xterm": "^3.0.1",
-    "zmodem.js": "^0.1.5"
-  }
+    "zmodem.js": "^0.1.5",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
